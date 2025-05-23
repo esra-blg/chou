@@ -1,0 +1,46 @@
+{
+  "trottinettes": [
+    {
+      "id": "1",
+      "modele": "Xiaomi Pro 2"
+    },
+    {
+      "id": "2",
+      "modele": "Ninebot Max G30"
+    },
+    {
+      "id": "-1",
+      "idTrottinette": 1,
+      "email": "h@i",
+      "telephone": "55558867",
+      "dateDebut": "2025-05-07",
+      "nbHeures": 1
+    },
+    {
+      "id": 1,
+      "idTrottinette": 2,
+      "email": "chou@dd",
+      "telephone": "654654",
+      "dateDebut": "2025-05-01",
+      "nbHeures": 1
+    }
+  ],
+  "reservations": [
+    {
+      "id": 2,
+      "idTrottinette": 1,
+      "email": "dd@d",
+      "telephone": "5435",
+      "dateDebut": "2025-05-02",
+      "nbHeures": 1
+    },
+    {
+      "id": 5,
+      "idTrottinette": 1,
+      "email": "kkdd@d",
+      "telephone": "55",
+      "dateDebut": "2025-05-09",
+      "nbHeures": 10
+    }
+  ]
+}

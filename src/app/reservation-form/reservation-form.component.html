@@ -1,0 +1,33 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="reservation-form">
+  <div class="form-group">
+    <label for="id">ID réservation:</label>
+    <input id="id" formControlName="id" type="number" />
+  </div>
+
+  <div class="form-group">
+    <label for="idTrottinette">ID Trottinette:</label>
+    <input id="idTrottinette" formControlName="idTrottinette" type="number" readonly />
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input id="email" formControlName="email" type="email" />
+  </div>
+
+  <div class="form-group">
+    <label for="telephone">Téléphone:</label>
+    <input id="telephone" formControlName="telephone" type="text" />
+  </div>
+
+  <div class="form-group">
+    <label for="dateDebut">Date de début:</label>
+    <input id="dateDebut" formControlName="dateDebut" type="date" />
+  </div>
+
+  <div class="form-group">
+    <label for="nbHeures">Nombre d'heures:</label>
+    <input id="nbHeures" formControlName="nbHeures" type="number" />
+  </div>
+
+  <button type="submit" [disabled]="form.invalid">Valider</button>
+</form>

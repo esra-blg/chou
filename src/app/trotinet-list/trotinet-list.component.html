@@ -1,0 +1,10 @@
+<h2 class="title">Liste des trottinettes</h2>
+
+<div class="trott-list">
+  <div class="trott-card" *ngFor="let t of trottinettes">
+    <div class="trott-info">
+      <span class="modele">{{ t.modele }}</span>
+      <button class="btn-reserver" (click)="reserver(t.id)">Réserver</button>
+    </div>
+  </div>
+</div>
