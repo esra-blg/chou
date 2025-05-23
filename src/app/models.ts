@@ -4,11 +4,11 @@ export interface Trottinette {
   }
   
   export interface Reservation {
-    id: number;
+localisation: any;
+    id: string; // Changed from number to string
     email: string;
     telephone: string;
     dateDebut: string;
     nbHeures: number;
     idTrottinette: number;
   }
-  

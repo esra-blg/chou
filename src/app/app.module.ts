@@ -7,8 +7,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TrotinetListComponent } from './trotinet-list/trotinet-list.component';
+
 import { ReservationFormComponent } from './reservation-form/reservation-form.component';
 import { ReservationComponent } from './reservation/reservation.component';
+import { EditReservationComponent } from './edit-reservation/edit-reservation.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { ReservationComponent } from './reservation/reservation.component';
     HeaderComponent,
     TrotinetListComponent,
     ReservationFormComponent,
-    ReservationComponent
+    ReservationComponent,
+    EditReservationComponent
   ],
   imports: [
     BrowserModule,

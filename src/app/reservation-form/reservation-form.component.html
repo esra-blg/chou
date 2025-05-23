@@ -1,7 +1,7 @@
 <form [formGroup]="form" (ngSubmit)="onSubmit()" class="reservation-form">
   <div class="form-group">
     <label for="id">ID réservation:</label>
-    <input id="id" formControlName="id" type="number" />
+    <input id="id" formControlName="id" type="text" /> <!-- Changed type to text -->
   </div>
 
   <div class="form-group">
@@ -28,6 +28,6 @@
     <label for="nbHeures">Nombre d'heures:</label>
     <input id="nbHeures" formControlName="nbHeures" type="number" />
   </div>
-
+  
   <button type="submit" [disabled]="form.invalid">Valider</button>
 </form>

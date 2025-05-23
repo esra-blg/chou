@@ -29,3 +29,29 @@
     border-bottom: none;
   }
   
+  .action-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .action-button.edit {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .action-button.edit:hover {
+    background-color: #2980b9;
+  }
+  
+  .action-button.delete {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .action-button.delete:hover {
+    background-color: #c0392b;
+  }

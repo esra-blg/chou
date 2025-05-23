@@ -19,4 +19,13 @@ export class ReservationComponent {
     });
   }
 
+  deleteReservation(id: string): void {
+    if (confirm('Êtes-vous sûr de vouloir supprimer cette réservation ?')) {
+      this.reservationService.deleteReservation(id).subscribe(() => {
+        this.reservations = this.reservations.filter(r => r.id !== id);
+        alert('Réservation supprimée !');
+      });
+    }
+  }
+
 }

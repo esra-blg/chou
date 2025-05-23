@@ -7,6 +7,7 @@
       <th>Date</th>
       <th>Durée</th>
       <th>ID Trottinette</th>
+      <th>Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -17,6 +18,10 @@
       <td>{{ r.dateDebut }}</td>
       <td>{{ r.nbHeures }}</td>
       <td>{{ r.idTrottinette }}</td>
+      <td>
+        <button class="action-button edit" [routerLink]="['/edit-reservation', r.id]">Modifier</button>
+        <button class="action-button delete" (click)="deleteReservation(r.id)">Supprimer</button>
+      </td>
     </tr>
   </tbody>
 </table>

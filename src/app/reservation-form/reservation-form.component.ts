@@ -28,7 +28,8 @@ export class ReservationFormComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       telephone: ['', Validators.required],
       dateDebut: ['', [Validators.required, Validators.pattern(/^\d{4}-\d{2}-\d{2}$/)]],
-      nbHeures: [1, [Validators.required, Validators.min(1)]],
+      nbHeures: [1, [Validators.required, Validators.min(1)]]
+  
     });
   }
 

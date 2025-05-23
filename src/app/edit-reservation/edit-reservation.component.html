@@ -1,0 +1,20 @@
+<h2>Modifier une réservation</h2>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label>Email:</label>
+  <input formControlName="email" type="email" />
+
+  <label>Téléphone:</label>
+  <input formControlName="telephone" type="text" />
+
+  <label>Date de début:</label>
+  <input formControlName="dateDebut" type="date" />
+
+  <label>Nombre d'heures:</label>
+  <input formControlName="nbHeures" type="number" />
+
+  <label>ID Trottinette:</label>
+  <input formControlName="idTrottinette" type="number" />
+
+  <button type="submit" [disabled]="form.invalid">Modifier</button>
+</form>

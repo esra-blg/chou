@@ -17,7 +17,7 @@
       "nbHeures": 1
     },
     {
-      "id": 1,
+      "id": "1",
       "idTrottinette": 2,
       "email": "chou@dd",
       "telephone": "654654",
@@ -27,20 +27,12 @@
   ],
   "reservations": [
     {
-      "id": 2,
+      "id": "1233",
       "idTrottinette": 1,
-      "email": "dd@d",
-      "telephone": "5435",
-      "dateDebut": "2025-05-02",
+      "email": "isra@esprit.com",
+      "telephone": "888",
+      "dateDebut": "2025-04-30",
       "nbHeures": 1
-    },
-    {
-      "id": 5,
-      "idTrottinette": 1,
-      "email": "kkdd@d",
-      "telephone": "55",
-      "dateDebut": "2025-05-09",
-      "nbHeures": 10
     }
   ]
 }
